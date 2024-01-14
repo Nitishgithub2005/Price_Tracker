@@ -16,9 +16,9 @@ def program():
     def notify():
         SMTP_SERVER = "smtp.gmail.com"
         PORT = 587
-        EMAIL_ID1 = "nitishmaladakar@gmail.com"#sender mail id
-        EMAIL_ID2 = "nitishmaladakar2005@gmail.com"#reciver mail id
-        PASSWORD = "cosq gzpa vmoj wzlz"
+        EMAIL_ID1 = "example1@gmail.com"#sender mail id
+        EMAIL_ID2 = "example2@gmail.com"#reciver mail id
+        PASSWORD = "your password"
         now_price=str(extract_price())
         try:
             server = SMTP(SMTP_SERVER, PORT)
