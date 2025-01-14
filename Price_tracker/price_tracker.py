@@ -10,7 +10,7 @@ def program():
     def extract_price():
         page = requests.get(URL)
         soup = BS(page.content, "html.parser")
-        price = float(soup.find(class_="_30jeq3 _16Jk6d").text.split()[0].replace("₹", "").replace(",",""))
+        price = float(soup.find(class_="Nx9bqj CxhGGd").text.split()[0].replace("₹", "").replace(",",""))
         return price
 
     def notify():
